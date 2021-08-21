@@ -1,0 +1,19 @@
+{
+  "name": "thing-picker",
+  "version": "1.0.0",
+  "description": "This app is created to choose something when you don't want to. Put in as many options as you want and the thing picker will choose for you!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emilykidd3/thing-picker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emilykidd3/thing-picker/issues"
+  },
+  "homepage": "https://github.com/Emilykidd3/thing-picker#readme"
+}
