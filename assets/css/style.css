@@ -10,3 +10,8 @@ header h1 {
   width: 30%;
   margin: 30px auto 0 auto;
 }
+
+#buttons {
+  display: flex;
+  justify-content: center;
+}
