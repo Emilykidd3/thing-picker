@@ -5,3 +5,8 @@ body {
 header h1 {
   letter-spacing: 5px;
 }
+
+#form {
+  width: 30%;
+  margin: 30px auto 0 auto;
+}
