@@ -11,8 +11,9 @@ var pick = function(event) {
     event.preventDefault();
     var optionOne = document.querySelector("#option-one").value;
     var optionTwo = document.querySelector("#option-two").value;
-    console.log(optionOne);
-    console.log(optionTwo);
+    var arr = [optionOne, optionTwo];
+    var number = Math.floor(Math.random() * 2);
+    console.log(arr[number]);
 }
 
 addThingButton.addEventListener("click", addThing);
