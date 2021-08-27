@@ -18,7 +18,7 @@ var pick = function(event) {
     const elemText = document.createTextNode(response);
     elem.appendChild(elemText);
     document.body.appendChild(elem);
-    elem.classList.add('response')
+    elem.classList.add('response');
 }
 
 addThingButton.addEventListener("click", addThing);
