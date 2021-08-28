@@ -8,7 +8,7 @@ var addThing = function() {
     inputElem.type = 'text';
     inputElem.setAttribute("placeholder", "thing");
     document.body.appendChild(inputElem);
-    inputElem.classList.add('form-control', 'form');
+    inputElem.classList.add('form-control', 'form', 'width30');
 }
 
 var pick = function(event) {
