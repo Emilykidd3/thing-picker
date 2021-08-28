@@ -4,7 +4,10 @@ var pickButton = document.querySelector("#pick-button");
 
 
 var addThing = function() {
-    console.log("add thing clicked")
+    const inputElem = document.createElement('input');
+    inputElem.type = 'text';
+    document.body.appendChild(inputElem);
+    inputElem.classList.add('form-control');
 }
 
 var pick = function(event) {

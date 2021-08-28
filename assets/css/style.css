@@ -17,7 +17,7 @@ header h1 {
 }
 
 .response {
-  font-size: large;
+  font-size: larger;
   display: flex;
   justify-content: center;
   margin-top: 10px;
