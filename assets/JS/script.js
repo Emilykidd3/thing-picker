@@ -6,6 +6,7 @@ var pickButton = document.querySelector("#pick-button");
 var addThing = function() {
     const inputElem = document.createElement('input');
     inputElem.type = 'text';
+    inputElem.setAttribute("placeholder", "thing");
     document.body.appendChild(inputElem);
     inputElem.classList.add('form-control');
 }
