@@ -1,8 +1,6 @@
 var addThingButton = document.querySelector("#add-thing-button");
 var pickButton = document.querySelector("#pick-button");
 
-
-
 var addThing = function() {
     const inputElem = document.createElement('input');
     inputElem.type = 'text';
