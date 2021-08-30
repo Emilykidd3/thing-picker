@@ -6,7 +6,7 @@ var addThing = function() {
     inputElem.type = 'text';
     inputElem.setAttribute("placeholder", "thing");
     document.getElementById('add-input').appendChild(inputElem);
-    inputElem.classList.add('form-control', 'form', 'width30');
+    inputElem.classList.add('form-control', 'form', 'width30', 'mb-3');
 }
 
 var pick = function(event) {
