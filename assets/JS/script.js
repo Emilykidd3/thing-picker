@@ -5,7 +5,7 @@ var addThing = function() {
     const inputElem = document.createElement('input');
     inputElem.type = 'text';
     inputElem.setAttribute("placeholder", "thing");
-    document.body.appendChild(inputElem);
+    document.getElementById('add-input').appendChild(inputElem);
     inputElem.classList.add('form-control', 'form', 'width30');
 }
 
