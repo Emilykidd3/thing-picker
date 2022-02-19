@@ -2,6 +2,7 @@ var addThingButton = document.querySelector("#add-thing-button");
 var pickButton = document.querySelector("#pick-button");
 var responseDiv = document.querySelector(".response")
 var amountOfThings = 2
+var arr = []
 
 var addThing = function() {
     amountOfThings += 1;
@@ -14,17 +15,12 @@ var addThing = function() {
 
 var pick = function(event) {
     event.preventDefault();
-    var optionOne = document.querySelector("#option-one").value;
-    var optionTwo = document.querySelector("#option-two").value;
-    var arr = [optionOne, optionTwo];
+    var optionOne = document.querySelector("#option-1").value;
+    var optionTwo = document.querySelector("#option-2").value;
+    arr.push(optionOne, optionTwo)
     var number = Math.floor(Math.random() * amountOfThings);
     var response = arr[number];
     responseDiv.innerHTML = response;
-    // const elem = document.createElement('div');
-    // const elemText = document.createTextNode(response);
-    // elem.appendChild(elemText);
-    // document.body.appendChild(elem);
-    // elem.classList.add('response');
 }
 
 addThingButton.addEventListener("click", addThing);
