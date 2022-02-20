@@ -11,9 +11,11 @@ var addThing = function() {
     inputElem.setAttribute("placeholder", "thing");
     document.getElementById('add-input').appendChild(inputElem);
     inputElem.classList.add('form-control', 'form', 'width30', 'mb-3');
+    inputElem.id = `option-${amountOfThings}`
 }
 
 var pick = function(event) {
+    captureAddedThings();
     event.preventDefault();
     var optionOne = document.querySelector("#option-1").value;
     var optionTwo = document.querySelector("#option-2").value;
@@ -21,6 +23,13 @@ var pick = function(event) {
     var number = Math.floor(Math.random() * amountOfThings);
     var response = arr[number];
     responseDiv.innerHTML = response;
+}
+
+var captureAddedThings = function() {
+    for (var i = 3; i <= amountOfThings; i++) {
+        var thingToAdd = document.querySelector(`#option-${i}`).value;
+        arr.push(thingToAdd);
+    }
 }
 
 addThingButton.addEventListener("click", addThing);
